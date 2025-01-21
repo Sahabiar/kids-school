@@ -360,7 +360,10 @@ svg{
 #big{
   grid-row: span 2;
 }
-
+.view_all{
+  text-align: center;
+  margin-top: 2rem;
+}
 /* footer styles */
 footer{
   background: var(--secondary-color);
