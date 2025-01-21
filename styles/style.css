@@ -413,7 +413,7 @@ footer{
     font-size: 1.01rem;
     margin: 1.8rem 0;
   }
-  .nav_menu, .btn_primary{
+  .nav_menu, .btn_primary, .male_box{
     display: none;
   }
   .box, .flex{
