@@ -287,20 +287,67 @@ svg{
 }
 /* about Stories styles */
 .Our_Stories{
-  height: 500px;
   padding: 2rem 0;
   background: linear-gradient(180deg, #FFFFFF, #fae2b4);
 }
-
-
-
-
-
-
-
-
-
-
+.stories_box{
+  display: flex;
+  gap: 2rem;
+}
+.male_box{
+  width: 40%;
+}
+.female_box{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 60%;
+}
+.img_stories img{
+  border-radius: 1rem 1rem 0rem 0rem;
+  -webkit-border-radius: 1rem 1rem 0rem 0rem;
+  -moz-border-radius: 1rem 1rem 0rem 0rem;
+  -ms-border-radius: 1rem 1rem 0rem 0rem;
+  -o-border-radius: 1rem 1rem 0rem 0rem;
+}
+.design{
+  border-radius: 1rem;
+  background-color: #ffffff;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.design h3{
+  font-size: 1.5;
+  font-weight: bold;
+  color: #000000;
+}
+.button_design {
+  position: relative;
+  top: -1rem;
+  left: 1rem;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 1.3rem;
+  -webkit-border-radius: 1.3rem;
+  -moz-border-radius: 1.3rem;
+  -ms-border-radius: 1.3rem;
+  -o-border-radius: 1.3rem;
+}
+.background_design{
+  background: #5D58F0;
+}
+.green{
+  background: #95B226;
+}
+.skyblue{
+  background-color: #3CD8E8;
+}
 /* footer styles */
 footer{
   background: var(--secondary-color);
@@ -375,10 +422,13 @@ footer{
   .hero_items{
     flex-direction: column-reverse;
   }
+  .stories_box{
+    flex-direction: column;
+  }
   .services {
     margin: 2rem 0 0 0;
   }
-  .services h2{
+  .title h2{
     font-size: 1.5rem;
   }
 }
