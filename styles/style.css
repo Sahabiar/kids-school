@@ -285,13 +285,12 @@ svg{
   padding: 2rem 0;
   background: linear-gradient(180deg, #FFFFFF, #fae2b4);
 }
+/* 
 .stories_box{
   display: flex;
   gap: 2rem;
-}
-.male_box{
-  width: 40%;
-}
+}*/
+
 .male_box h3{
   margin: 0rem 1rem;
 }
@@ -325,6 +324,7 @@ svg{
 }
 .design h3{
   font-size: 1.5;
+  margin: 1rem 1rem;
   font-weight: bold;
   color: #000000;
 }
@@ -351,6 +351,14 @@ svg{
 }
 .skyblue{
   background-color: #3CD8E8;
+} 
+.stories_box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+#big{
+  grid-row: span 2;
 }
 
 /* footer styles */
@@ -389,6 +397,9 @@ footer{
 
 }
 @media screen and (max-width: 768px){
+  .stories_box{
+    grid-template-columns: repeat(2, 1fr);
+  }
   .fa-solid{
     display: block;
     margin: 10px;
@@ -420,7 +431,7 @@ footer{
   }
   .nav_menu,
   .btn_primary,
-  .male_box,
+  #big,
   .arrow_box{
     display: none;
   }
